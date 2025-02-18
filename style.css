@@ -315,7 +315,75 @@
   }
 }
 @media only screen and (min-width:476px) and (max-width:785px){
-
+  .logo {
+    font-size: 6vw;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+  }
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  .nav-list {
+    display: none;
+  }
+  #theme-toggle-button {
+    font-size: 15px;
+    width: 2em;
+  }
+  .info {
+    width: 100%;
+  }
+  .info h1 {
+    font-size: 6vw;
+  }
+  .typewriter h3 {
+    font-size: 6vw;
+    margin: 2vh 0vh;
+  }
+  .info p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 5vw;
+  }
+  .icons {
+    gap: 3vw;
+    margin-top: 2vw;
+}
+  .icons .icon {
+    padding: 3.8vw;
+    width: 1vw;
+    height: 1vw;  
+}
+.hire-me {
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 5vw;
+}
+.hero-section {
+  display: block;
+}
+  .hero-img {
+    width: 100%;
+  }
+  .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img img {
+    width: 60vw;
+    border-radius: 50%;
+  }
 }
 @media only screen and (min-width: 786px) and (max-width: 1250px){
   .logo {
@@ -365,7 +433,7 @@
 }
   .hero-img {
     width: 50%;
-    height: 45vh;
+    height: 100vh;
     /* background-color: firebrick; */
   }
   /* .hero-img {
