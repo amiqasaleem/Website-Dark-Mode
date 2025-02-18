@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+:root {
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+.hire-me {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(238, 234, 234);
+    box-shadow: rgb(0 0 0 / 5%) 5px 5px 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.hire-me:hover {
+    letter-spacing: 3px;
+    background-color: #D1261E;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #D1261E 0px 7px 29px 0px;
+}
+.hire-me:active {
+    letter-spacing: 3px;
+    background-color: #D1261E;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #D1261E;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+.logo {
+    font-size: 2vw;
+    margin-left: 5vw;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: #D1261E;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    box-sizing: border-box;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-list li:hover{
+    color: #D1261E;
+    font-weight: 600;
+}
+.hero-section {
+    height: 100vh;
+    display: flex;
+}
+.info h1 span {
+  color: #D1261E;
+}
+.typewriter h3 span {
+  color: #D1261E;
+}
+.info {
+    width: 50%;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;  
+    box-sizing: border-box; 
+}
+.info h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: var(--secondary-color); */
+}
+.info h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.info p {
+    line-height: 1.5rem;
+    width: 80%;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.icons .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: #D1261E;
+    cursor: pointer;
+}
+
+.hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.hero-img img {
+  width: 26vw;
+  border-radius: 50%;
+}
+
+/* GLOBAL STYLES */
+/* DEMO-SPECIFIC STYLES (TypeWriter effect by CSS_Tricks) */
+
+.typewriter h3 {
+    color: black;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+/* ******************************* From Uiverse.io by rishichawda *************************************/
+/* The switch - the box around the slider */
+
+#theme-toggle-button {
+  margin-right: 2vw;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  cursor: pointer;
+}
+  
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+  
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+  
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+  
+  /* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+  
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+  
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+  
+#moon {
+  opacity: 0;
+}
+  
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+  
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+  
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+  
+#stars {
+  opacity: 0;
+}
+  
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
+/* Dark mode toggle styling for JavaScript */
+
+.dark {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .2s ease-in;
+}
+.dark .typewriter h3 {
+  color: #fff; /* White text in dark mode */
+}
+.dark .icons .icon {
+  border: 2px solid white;
+}
+.dark .icons .icon:hover {
+  color: #fff;
+  border: 2px solid red;
+}
+
+/* Media Queries for responsive design */
+
+@media only screen and (max-width: 475px){
+  .logo {
+    font-size: 6vw;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+  }
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  .nav-list {
+    display: none;
+  }
+  #theme-toggle-button {
+    font-size: 15px;
+    width: 2em;
+  }
+  .info {
+    width: 100%;
+  }
+  .info h1 {
+    font-size: 6vw;
+  }
+  .typewriter h3 {
+    font-size: 6vw;
+    margin: 2vh 0vh;
+  }
+  .info p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 5vw;
+  }
+  .icons {
+    gap: 3vw;
+    margin-top: 2vw;
+}
+  .icons .icon {
+    padding: 3.8vw;
+    width: 1vw;
+    height: 1vw;  
+}
+.hire-me {
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 5vw;
+}
+.hero-section {
+  display: block;
+}
+  .hero-img {
+    width: 100%;
+  }
+  .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-img img {
+    width: 60vw;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width:476px) and (max-width:785px){
+
+}
+@media only screen and (min-width: 786px) and (max-width: 1250px){
+  .logo {
+    font-size: 4.5vw;
+  }
+  .nav-list {
+    font-size: 1rem;
+  }
+  #theme-toggle-button {
+    width: 4.5em;
+  }
+  .info {
+    width: 50%;
+  }
+  .info h1 {
+    font-size: 4.5vw;
+    font-weight: 600;
+  }
+  .typewriter h3 {
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 1.5vh 0vh;
+  }
+  .info p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2.2vw;
+  }
+  .icons {
+    gap: 2vw;
+    margin-top: 1.5vw;
+}
+  .icons .icon {
+    padding: 0.5vw;
+    width: 3vw;
+    height: 3vw;  
+}
+.hire-me {
+    padding: 1rem 3rem;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+.hero-section {
+  display: flex;
+}
+  .hero-img {
+    width: 50%;
+    height: 45vh;
+    /* background-color: firebrick; */
+  }
+  /* .hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .hero-img img {
+    width: 30vw;
+    border-radius: 50%;
+  }
+}
